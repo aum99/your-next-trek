@@ -1,0 +1,77 @@
+</html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maharashtra Fortfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet' />
+<link rel="stylesheet" href="/stylesheets/app.css">
+<script
+      src="https://kit.fontawesome.com/ed3d1a6954.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .image-main {
+        background: url("https://images.unsplash.com/photo-1549383824-df158e82fb46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1773&q=80")
+          no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        height: 97%;
+      }
+      .image-hero {
+        background: url("https://images.unsplash.com/photo-1549383824-df158e82fb46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1773&q=80")
+          no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size:cover;
+        height: 97%;
+      }
+      .image-cap {
+        background: url("https://images.unsplash.com/photo-1549383824-df158e82fb46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1773&q=80")
+          no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        height: 50px;
+      }
+      @media screen and (max-width: 990px) {
+  .image-hero {
+    height: 60%;
+  }
+  .drop {
+    display: none;
+  }
+  .login-form{
+    width: 300px;
+    font-size: 10px;
+    margin-left: 5%;
+  }
+}
+     
+    </style>
+</head>
+
+<body class="d-flex flex-column vh-100">
+        <%- include('../partials/navbar') %>
+        <main class="container mt-4">
+          <%- include('../partials/flash') %>
+            <%- body %>
+        </main>
+        <%- include('../partials/footer') %>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+                crossorigin="anonymous"></script>
+                <script src="/javascripts/validatedForms.js"></script>
+</body>
+
+</html>

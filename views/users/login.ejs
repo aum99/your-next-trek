@@ -1,0 +1,64 @@
+<% layout('layouts/boilerplate')%>
+
+<div class="container">
+  <div class="row" style="height: 600px">
+    <div class="col-lg-7 drop col-sm-12">
+      <div
+        class="image-main d-flex justify-content-end"
+        style="margin: 10px; border-radius: 40px"
+      >
+        <a
+          href="/register"
+          class="btn btn-dark btn-lg m-3"
+          style="height: 50px; border-radius: 20px"
+          >Register</a
+        >
+      </div>
+    </div>
+    <div
+      class="col-lg-5 col-sm-12 d-flex flex-column align-items-center justify-content-center"
+    >
+      <h1 style="letter-spacing: 1px">Welcome back, bud!</h1>
+      <p class="fw-light fs-4">Login to your account exploring us.</p>
+
+      <form
+        action="/login"
+        method="POST"
+        style="width: 350px"
+        class="validated-form login-form"
+        novalidate
+      >
+        <div class="mb-3">
+          <label class="form-label" for="username">Username</label>
+          <input
+            class="form-control"
+            type="text"
+            id="username"
+            name="username"
+            autofocus
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="password">Password</label>
+          <input
+            class="form-control"
+            type="password"
+            id="password"
+            name="password"
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <button
+          class="btn btn-dark btn-block"
+          style="width: 100%; border-radius: 15px"
+        >
+          Login
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

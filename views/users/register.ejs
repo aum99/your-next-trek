@@ -1,0 +1,74 @@
+<% layout('layouts/boilerplate')%>
+
+<div class="container">
+  <div class="row" style="height: 600px">
+    <div
+      class="col-lg-5 col-sm-12 d-flex flex-column align-items-center justify-content-center"
+    >
+      <h1 style="letter-spacing: 1px">Create an account</h1>
+      <p class="fw-light fs-4">Lets get started with your journey.</p>
+
+      <form
+        action="/register"
+        method="POST"
+        class="validated-form"
+        style="width: 350px"
+        novalidate
+      >
+        <div class="mb-3">
+          <input
+            class="form-control"
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username"
+            required
+            autofocus
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <div class="mb-3">
+          <input
+            class="form-control"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <div class="mb-3">
+          <input
+            class="form-control"
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <button
+          class="btn btn-dark mt-2 d-block"
+          style="border-radius: 15px; width: 100%"
+        >
+          Register
+        </button>
+      </form>
+    </div>
+    <div class="col-lg-7 drop col-sm-12">
+      <div
+        class="image-hero user-action d-flex justify-content-end"
+        style="margin: 10px; border-radius: 40px"
+      >
+        <a
+          href="/login"
+          class="btn btn-dark btn-lg m-3"
+          style="height: 50px; border-radius: 20px"
+          >Login</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

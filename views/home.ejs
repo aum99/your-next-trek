@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maharashtra Fortfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/ed3d1a6954.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        .nav-item{
+    text-align: right;
+}
+      .full {
+        background: url("https://images.unsplash.com/photo-1549383824-df158e82fb46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1773&q=80")
+          no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        height: 100%;
+      }
+
+      .hero-content{
+        justify-content: center;
+      }
+
+      @media screen and (max-width:612px) {
+        .drop{
+          display: none ;
+        }
+        p{
+          letter-spacing: 0;
+          text-align: center;
+        }
+        .hero-content{
+          margin-top: 5rem;
+          justify-content:start;
+        }
+      }
+    
+    </style>
+  </head>
+  <body class="vh-100">
+    <div class="full p-3">
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Maha-Folio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
+                <li class="nav-item mx-5">
+                    <a class="nav-link active" aria-current="page" href="/campgrounds"
+                      >Forts</a
+                    >
+                  </li>
+                  <% if(!currentUser) { %>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="/login">Login</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="/register">Register</a>
+                  </li>
+                  <% }else{ %>
+                    <li class="nav-item mx-4">
+                      <a class="nav-link" href="/logout">Logout</a>
+                    </li>
+                    <% } %>
+                    <li class="nav-item mx-4">
+                      <a class="nav-link" href="/about">About</a>
+                    </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div style="width: 50%; height:70%" class="d-flex flex-column hero-content mx-5">
+        <p style="letter-spacing: 15px">WELCOME TO</p>
+        <h1 class="mb-3">MAHA-FOLIO</h1>
+        <p class="mb-4 drop" style="text-align: justify;">
+          Looking to delve deeper into the fascinating world of forts? Look no
+          further than our website, where you'll find a wealth of information
+          and insights about these magnificent structures. <br> Explore the secrets
+          of centuries-old forts, from their construction and strategic
+          importance to the lives of the people who inhabited them. And with our
+          rating system, you can easily share your opinions and contribute to
+          the conversation.
+        </p>
+        <div>
+        <a href="/campgrounds" style="text-decoration: none; color:black;font-size: 1rem;" class="me-4"
+          ><i class="fa-solid fa-compass fa-xl mx-2"></i> </i>Get Started</a
+        >
+        <a href="/about" class="ms-5 text-dark" style="text-decoration: none"
+          >More info</a
+        >
+    </div>
+      </div>
+      <footer class="mt-5 d-flex justify-content-center text-white">
+        <p class="drop">Made with ❤️ in Pune by Aum Battul &copy; 2023</p>
+      </footer>
+    </div>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
